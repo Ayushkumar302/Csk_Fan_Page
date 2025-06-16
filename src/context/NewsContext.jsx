@@ -7,8 +7,8 @@ export const NewsProvider = ({ children }) => {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
     
-    const API_KEY = "1393fbda3fbb402ab97e3c5fe87c91d8"; 
-    const newsUrl = `https://newsapi.org/v2/everything?q=CSK&apiKey=${API_KEY}`;
+    const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+const newsUrl = `https://newsapi.org/v2/everything?q=CSK&apiKey=${API_KEY}`;
 
     const fetchNews = async () => {
         setLoading(true);
