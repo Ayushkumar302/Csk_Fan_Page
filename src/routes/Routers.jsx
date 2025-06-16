@@ -6,7 +6,7 @@ import News from '../pages/News';
 import Login from '../pages/Login'; 
 import Signup from '../pages/Signup';
 import { Route, Routes } from 'react-router-dom';
-import Polls from '../pages/polls';
+import Polls from '@/pages/Polls';
 
 function Routers() {
   return (
